@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nav {
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 9999;
+    background-color: #FFF;
+}
+
+.nav__logo {
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
+
+.nav__logo a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: rgb(73, 72, 72);
+    font-size: 1.2rem;
+}
+
+.fa-envira {
+    color: #fff;
+    background-color: green;
+    padding: 5px 5px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.nav__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.nav__item {
+    list-style: none;
+    padding-top: 5px;
+    border-top: 3px solid transparent;
+    margin-left: 3vw;
+}
+
+.nav__item a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: grey;
+}
+
+.header {
+    position: relative;
+    padding: max(10px, 10vw);
+    background-image: url(/Img/Header_background.png);
+    background-color: #767474;
+    background-blend-mode: multiply;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header__title {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.header__info {
+    color: #fff;
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 20px auto 30px auto;
+}
+
+.button {
+    padding: 15px 25px;
+    display: flex;
+    border: none;
+    background-color: #60da55;
+    border-radius: 35px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-shadow: 1px 1px grey;
+    cursor: pointer;
+    position: relative;
+    left: 33vw;
+    color: #fff;
+}
+
+.header a {
+    text-decoration: none;
+}
