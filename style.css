@@ -215,3 +215,113 @@
 .relax button {
     margin-left: 100px;
 }
+
+.developing {
+    position: relative;
+    padding: max(10px, 7vw);
+    width: 100%;
+    background-image: url(/Img/isometric\ iPad\ Air.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 600px 150px;
+}
+
+.developing__title {
+    color: #000;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.developing__title--info {
+    color: #000;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.developing__information--title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.developing__information--info {
+    width: 550px;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+.developing__elements {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.developing__item {
+    display: flex;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.fa-shopping-basket {
+    font-size: 3rem;
+    border: black 4px solid;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 15px;
+    padding: 14px;
+}
+
+.fa-laptop {
+    font-size: 3rem;
+    margin-right: 15px;
+    border: black 4px solid;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 13px;
+}
+
+.fa-lock {
+    font-size: 3rem;
+    margin-right: 15px;
+    border: black 4px solid;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 12px;
+}
+
+.developing__item--text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.developing__item--title {
+    font-size: 1.3rem;
+    margin-bottom: 6px;
+}
+
+.developing__info {
+    width: 550px;
+    margin-bottom: 30px;
+    line-height: 30px;
+}
+
+.developing__details {
+    text-decoration: none;
+    color: chartreuse;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.fa-arrow-right {
+    margin-left: 20px;
+}
