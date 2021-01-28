@@ -500,3 +500,82 @@ html {
     background-color: rgba(192, 192, 192, 0.083);
     padding: 15px;
 }
+
+.contact {
+    position: relative;
+    padding: max(10px, 6vw);
+    width: 100%;
+    background-color: #60da55;
+}
+
+.contact__title {
+    color: #fff;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.button--contact {
+    border: #fff solid 3px;
+    left: 45%;
+    margin-top: 35px;
+    font-size: 1rem;
+}
+
+.contact a {
+    text-decoration: none;
+}
+
+.company {
+    position: relative;
+    padding: max(10px, 6vw);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.company__item {
+    margin: auto 40px auto 40px
+}
+
+.information {
+    position: relative;
+    padding: max(10px, 6vw);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(36, 35, 35);
+}
+
+.information__item {
+    width: 300px;
+    margin-left: 50px;
+}
+
+.information__item--title {
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.information__item--info {
+    display: flex;
+    line-height: 50px;
+    align-items: center;
+}
+
+.information__item--text {
+    margin-left: 10px;
+    color: #fff;
+}
+
+.information i {
+    color: #fff;
+    font-size: 20px;
+}
+
+.information__item--info-twitter {
+    display: flex;
+    margin-bottom: 25px;
+}
