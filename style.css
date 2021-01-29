@@ -73,6 +73,8 @@ html {
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
 }
 
 .header__title {
@@ -92,6 +94,8 @@ html {
 .button {
     padding: 15px 25px;
     display: flex;
+    justify-content: center;
+    justify-self: center;
     border: none;
     background-color: #60da55;
     border-radius: 35px;
@@ -100,8 +104,8 @@ html {
     text-shadow: 1px 1px grey;
     cursor: pointer;
     position: relative;
-    left: 33vw;
     color: #fff;
+    margin: auto;
 }
 
 .header a {
@@ -182,10 +186,11 @@ html {
 .relax__info {
     color: #fff;
     font-size: 1.3rem;
-    margin-bottom: 50px;
-    width: 50vw;
-    margin-left: 250px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: auto auto 50px auto;
+    width: 50%;
 }
 
 .relax__information {
@@ -197,20 +202,22 @@ html {
 .relax__item {
     color: #fff;
     margin-bottom: 20px;
-    font-size: 1rem;
-    position: relative;
-    text-align: left;
-    margin-left: 50vh;
     font-size: 1.5rem;
-    display: flex;
-    text-align: center;
+    line-height: 60px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
     align-items: center;
 }
 
-.fa-check-circle {
+.relax .fa-check-circle {
     color: #fff;
-    margin-right: 20px;
     font-size: 50px;
+}
+
+.relax__item i {
+    text-align: right;
+    margin-right: 20px;
 }
 
 .relax a {
@@ -218,7 +225,8 @@ html {
 }
 
 .relax button {
-    margin-left: 100px;
+    margin: 30px auto 30px auto;
+    justify-content: center;
 }
 
 .developing {
@@ -556,7 +564,7 @@ html {
 .information__item--title {
     color: #fff;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .information__item--info {
@@ -578,4 +586,75 @@ html {
 .information__item--info-twitter {
     display: flex;
     margin-bottom: 25px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    padding: max(10px, 4vw);
+    width: 100%;
+    text-align: center;
+}
+
+.copyrights {
+    color: black;
+}
+
+.footer__social {
+    text-align: left;
+}
+
+.footer__social i {
+    margin-left: 50px;
+    color: #fff;
+    background-color: rgb(36, 35, 35);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    padding: 9px;
+}
+
+@media screen and (max-width: 768px) {
+    .nav {
+        position: relative;
+    }
+    .header__title {
+        font-size: 2.5rem;
+    }
+    .header__info {
+        font-size: 1rem;
+    }
+    .service__title {
+        font-size: 2.5rem;
+    }
+    .service__info {
+        font-size: 1rem;
+    }
+    .service__items i {
+        font-size: 50px;
+    }
+    .service__item--title {
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+    .service__items {
+        margin-left: -40px;
+        margin-right: -40px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        text-align: center;
+    }
+    .service__item--info {
+        font-size: 0.9rem;
+        text-align: justify;
+    }
+    .relax__title {
+        font-size: 2.5rem;
+    }
+    .relax__info {
+        font-size: 1rem;
+        line-height: 30px;
+    }
 }
