@@ -656,6 +656,9 @@ html {
         height: 300px;
         width: 150px;
     }
+    .nav__menu.close {
+        opacity: 0;
+    }
     .nav__item a {
         color: #fff;
     }
