@@ -236,7 +236,8 @@ html {
     background-image: url(/Img/isometric\ iPad\ Air.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: 600px 150px;
+    background-position: 70% 50%;
+    background-size: 550px 550px;
 }
 
 .developing__title {
@@ -369,9 +370,11 @@ html {
 }
 
 .value__element {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
     text-align: center;
+    justify-content: center;
+    margin-right: -40px;
+    margin-left: -40px;
 }
 
 .value__item {
@@ -400,15 +403,6 @@ html {
     padding: 22px;
 }
 
-.fa-music::after {
-    content: "";
-    position: absolute;
-    border: grey 2px solid;
-    width: min(12%);
-    margin-top: 30px;
-    margin-left: min(75px);
-}
-
 .fa-chart-bar {
     font-size: 4rem;
     border: grey 3.5px solid;
@@ -418,15 +412,6 @@ html {
     border-radius: 50%;
     margin-bottom: 20px;
     padding: 25px;
-}
-
-.fa-chart-bar::after {
-    content: "";
-    position: absolute;
-    border: grey 2px solid;
-    width: min(12%);
-    margin-top: 30px;
-    margin-left: min(75px);
 }
 
 .fa-star {
@@ -634,7 +619,7 @@ html {
     }
     #moblie--menu {
         position: absolute;
-        top: 10%;
+        top: 4%;
         right: 5%;
         transform: translate(5%, 20%);
     }
@@ -656,7 +641,6 @@ html {
         height: 300px;
         width: 150px;
         text-align: center;
-        border-end-end-radius: 20px;
         border-bottom-left-radius: 20px;
     }
     .nav__item a {
@@ -713,7 +697,7 @@ html {
         line-height: 30px;
     }
     .developing {
-        background-position: 400px 300px;
+        background-position: 50% 65%;
         background-size: 320px 320px;
     }
     .developing__title {
@@ -721,6 +705,9 @@ html {
     }
     .developing__title--info {
         font-size: 1rem;
+    }
+    .developing__elements {
+        background-color: rgba(255, 255, 255, 0.638);
     }
     .developing__information--title {
         font-size: 1.3rem;
@@ -824,5 +811,89 @@ html {
     }
     .footer__social i {
         margin-left: 25px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .nav {
+        height: 40px;
+    }
+    .service__title {
+        margin-top: 22px;
+    }
+    .relax__title {
+        font-size: 1.7rem;
+        margin-top: 22px;
+    }
+    .relax__info {
+        width: 100%;
+    }
+    .relax__item {
+        font-size: 1.2rem;
+    }
+    .relax .fa-check-circle {
+        font-size: 40px;
+    }
+    .developing__information--title {
+        text-align: center;
+    }
+    .developing__information--info {
+        text-align: center;
+        width: 420px;
+    }
+    .developing {
+        background-position: 80px 300px;
+    }
+    .developing__elements {
+        background: rgba(255, 255, 255, 0.576);
+        padding-left: 50px;
+        width: 100%;
+    }
+    .developing__elements i {
+        background-color: rgba(255, 255, 255, 0.576);
+    }
+    .developing__info {
+        width: 420px;
+        text-align: center;
+    }
+    .clients__info {
+        margin-bottom: 30px;
+    }
+    .clients__element {
+        display: flex;
+        flex-direction: column;
+    }
+    .clients__item--first {
+        display: inline;
+        text-align: center;
+        margin-top: -20px;
+    }
+    .clients__item--information--first {
+        width: 400px;
+        margin-left: -10px;
+        margin-top: -10px;
+    }
+    .clients__item--second {
+        display: inline;
+        text-align: center;
+        margin-top: -20px;
+    }
+    .clients__item--information--second {
+        width: 400px;
+        margin-left: -10px;
+        margin-top: -10px;
+    }
+    .contact__title {
+        font-size: 1.3rem;
+        width: 400px;
+    }
+    .footer__social i {
+        width: 25px;
+        height: 25px;
+        margin-right: -5px;
+        font-size: 0.6rem;
+    }
+    .copyrights {
+        font-size: 0.7rem;
     }
 }
