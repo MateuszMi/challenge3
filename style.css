@@ -616,6 +616,9 @@ html {
 }
 
 @media screen and (max-width: 768px) {
+    .nav {
+        height: 50px;
+    }
     #moblie--menu.is-active .bar:nth-child(2) {
         opacity: 0;
     }
@@ -631,7 +634,7 @@ html {
     }
     #moblie--menu {
         position: absolute;
-        top: 20%;
+        top: 10%;
         right: 5%;
         transform: translate(5%, 20%);
     }
@@ -639,26 +642,28 @@ html {
         width: 25px;
         height: 3px;
         margin: 5px auto;
-        transition: all 0.3s ease-in-out;
-        background: rgb(235, 6, 6);
+        transition: all 0.5s ease-in-out;
+        background: grey;
     }
     .nav__menu.active {
-        background: #9d5c5c;
+        background: rgba(128, 128, 128, 0.7);
         top: 100%;
         opacity: 1;
-        transition: all 0.5s ease;
+        transition: opacity 0.3s ease-in;
         z-index: 99;
-        height: 50vh;
-        font-size: 1.6rem;
+        right: 1.5%;
+        font-size: 1rem;
+        height: 300px;
+        width: 150px;
     }
-    .nav__item {
-        width: 100%;
+    .nav__item a {
+        color: #fff;
     }
     .navbar__links {
         text-align: center;
-        padding: 2rem;
+        padding: 0.5rem;
         width: 100%;
-        display: table;
+        display: block;
     }
     .nav__menu {
         display: grid;
@@ -666,9 +671,7 @@ html {
         margin: 0;
         width: 100%;
         position: absolute;
-        top: -1000px;
         opacity: 0;
-        transition: all 0.5s ease;
         height: 50vh;
         z-index: -1;
     }
