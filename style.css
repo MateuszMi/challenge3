@@ -646,21 +646,21 @@ html {
         background: grey;
     }
     .nav__menu.active {
-        background: rgba(128, 128, 128, 0.7);
+        background: #fff;
         top: 100%;
         opacity: 1;
         transition: opacity 0.3s ease-in;
         z-index: 99;
-        right: 1.5%;
+        right: 0;
         font-size: 1rem;
         height: 300px;
         width: 150px;
-    }
-    .nav__menu.close {
-        opacity: 0;
+        text-align: center;
+        border-end-end-radius: 20px;
+        border-bottom-left-radius: 20px;
     }
     .nav__item a {
-        color: #fff;
+        color: grey;
     }
     .navbar__links {
         text-align: center;

@@ -13,5 +13,4 @@ menuLinks.addEventListener('click', function(e) {
         menuLinks.classList.remove('active');
         menu.classList.remove("is-active");
     }
-
 });
